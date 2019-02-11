@@ -1,0 +1,54 @@
+body {
+	background-color: lightgray;
+}
+#hoofder {
+	text-align: center;
+	margin: auto;
+	width: 50%;
+	margin-top: 20px;
+	border: 1px solid black;
+	border-radius: 15px;
+	background-color: gray;
+	padding-right: 20px;
+	font-size: 30px;
+}
+
+@keyframes hoofder{
+	from{
+		background-color: lightgray;
+		font-size: 30px;
+	}
+	to {
+		background-color: darkred;
+		font-size: 50px;
+	}
+}
+
+#hoofder:hover {
+	animation-name: hoofder;
+	animation-duration: .5s;
+	animation-fill-mode: forwards;
+}
+
+#name {
+	border-radius: 20px 0px 0px 20px;
+}
+
+#verstuur {
+	border-radius 0px 20px 20px 0px;
+	background-color: lightgreen;
+	font-size: 15px;
+}
+
+@keyframes verstuur{
+	from {
+		background-color: lightgreen;
+	} to{
+		background-color: red; }
+}
+
+#verstuur:hover {
+	animation-name: verstuur;
+	animation-duration: .5s;
+	animation-fill-mode: forwards;
+}
